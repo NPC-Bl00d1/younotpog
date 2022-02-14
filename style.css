@@ -1,0 +1,24 @@
+body{
+
+background-color:aliceblue;
+
+}
+
+#urmom {
+
+color:#222f45;
+font-size:35px;
+
+}
+
+button{
+
+background-color: #222f45;
+color:white;
+font-size: 25px;
+
+}
+
+canvas {
+    border:5px solid black;
+}
