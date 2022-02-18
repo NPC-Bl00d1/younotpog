@@ -1,6 +1,12 @@
+
+nose_x = 0;
+nose_y = 0;
+
 function preLoad(){
 
 //useless rn
+
+mustache = loadImage("mustache.png");
 
 }
 
@@ -19,7 +25,10 @@ posenet.on('pose' , gotPoses)
 
 function draw(){
 
-    image(video, 200, 150, 300, 300);
+    image(webcam, 0, 0, 700, 600);
+    
+    image(mustache , nose_x , nose_y , 200 , 200);
+    
 
 }
 
