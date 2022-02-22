@@ -2,9 +2,7 @@
 nose_x = 0;
 nose_y = 0;
 
-function preLoad(){
-
-//useless rn
+function preload(){
 
 mustache = loadImage("mustache.png");
 
@@ -27,7 +25,7 @@ function draw(){
 
     image(webcam, 0, 0, 700, 600);
     
-    image(mustache , nose_x , nose_y , 200 , 200);
+    image(mustache , nose_x - 10, nose_y + 29, 80 , 80);
     
 
 }
@@ -35,7 +33,7 @@ function draw(){
 
 function modelLoaded(){
 
-    console.log("model loaded yey");
+    console.log("model loaded hooyey");
     
     }
     
@@ -47,6 +45,9 @@ function modelLoaded(){
     console.log("nose x = " + results[0].pose.nose.x);
     console.log("nose y = " +results[0].pose.nose.y);
     
+    nose_x = results[0].pose.nose.x;
+    nose_y = results[0].pose.nose.y;
+
     }
     
     }
